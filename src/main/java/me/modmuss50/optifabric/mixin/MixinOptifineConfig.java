@@ -15,7 +15,6 @@ public class MixinOptifineConfig {
 	@Shadow
 	private static GameOptions gameSettings;
 
-	@SuppressWarnings({"InvalidMemberReference", "UnresolvedMixinReference"})
 	@Inject(method = {"isAnimatedTerrain", "isAnimatedTextures", "isSwampColors", "isRandomEntities", "isSmoothBiome", "isCustomColors", "isCustomSky", "isCustomFonts", "isShowCapes", "isConnectedTextures", "isNaturalTextures", "isEmissiveTextures", "isConnectedTexturesFancy", "isFastRender", "isTranslucentBlocksFancy", "isSmoothWorld", "isLazyChunkLoading", "isDynamicFov", "isAlternateBlocks", "isCustomItems", "isDynamicLights", "isDynamicLightsFast", "isCustomEntityModels", "isCustomGuis", "isSmoothFps", "isShowGlErrors"},
 			at = @At("HEAD"), cancellable = true, remap = false)
 	private static void isRandomEntities(CallbackInfoReturnable<Boolean> returnable) {

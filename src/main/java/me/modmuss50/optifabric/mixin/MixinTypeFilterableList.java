@@ -24,6 +24,7 @@ public abstract class MixinTypeFilterableList<T> {
 
     /**
      * @author hydos
+     * @reason optifabric for 1.8.9
      */
     @Overwrite
     public <S> Iterable<S> method_6408(final Class<S> var1) {
@@ -40,6 +41,7 @@ public abstract class MixinTypeFilterableList<T> {
 
     /**
      * @author hydos
+     * @reason optifabric for 1.8.9
      */
     @Overwrite
     public Iterator<T> iterator() {
